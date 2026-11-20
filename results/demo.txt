@@ -1,0 +1,4 @@
+User: u1, item: m4, k=2
+Prediction: 5.0000
+neighbor=u5; similarity=1.0000; rating=5.0
+neighbor=u4; similarity=1.0000; rating=5.0
