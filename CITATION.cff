@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it; verify author metadata before formal publication."
+title: "Collaborative Filtering for Movie Recommendation: Reproducible Educational Repository"
+type: software
+authors:
+  - name: "Project contributors (author identity to be confirmed)"
+repository-code: "https://github.com/nhulaquynh/collaborative-filtering-movie-recommender"
+license: MIT
+date-released: 2026-11-20
+version: 0.1.0
+abstract: "Educational implementation and research notes on User-KNN, Item-KNN and movie recommendation."
+keywords:
+  - collaborative filtering
+  - recommender systems
+  - user-based KNN
+  - item-based KNN
