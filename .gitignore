@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+*.aux
+*.log
+*.toc
+*.out
+*.bcf
+*.bbl
+*.blg
+*.run.xml
+*.synctex.gz
+.DS_Store
