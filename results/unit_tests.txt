@@ -1,0 +1,8 @@
+test_cosine_identical (test_recommender.TestCollaborativeFiltering.test_cosine_identical) ... ok
+test_cosine_no_common (test_recommender.TestCollaborativeFiltering.test_cosine_no_common) ... ok
+test_prediction (test_recommender.TestCollaborativeFiltering.test_prediction) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK
