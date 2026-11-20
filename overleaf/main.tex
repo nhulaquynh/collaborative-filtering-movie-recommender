@@ -1,0 +1,78 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage{vietnamese}
+\setotherlanguage{english}
+\setmainfont{TeX Gyre Termes}
+\usepackage{array,tabularx,booktabs,longtable}
+\usepackage{amsmath,graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{setspace}
+\setstretch{1.18}
+\title{\textbf{PHÂN TÍCH VÀ SO SÁNH GIẤY PHÉP MÃ NGUỒN MỞ}\\\large Nghiên cứu tình huống: GNU Bash, React và Apache Spark}
+\author{Học viên: [CẦN BỔ SUNG] \\ Đơn vị: [CẦN BỔ SUNG]}
+\date{Tháng 11 năm 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Báo cáo phân tích ba giấy phép phần mềm mã nguồn mở là GNU GPL phiên bản 3, MIT và Apache License 2.0 thông qua các dự án GNU Bash, React và Apache Spark. Nội dung tập trung vào quyền sử dụng, chỉnh sửa và phân phối; nghĩa vụ khi tái phân phối; khả năng tích hợp trong sản phẩm thương mại; cùng tác động của lựa chọn giấy phép tới cộng đồng phát triển. Từ đó, báo cáo đề xuất giấy phép MIT cho repository nghiên cứu giáo dục về lọc cộng tác trong gợi ý phim. Đây là phân tích tài liệu và chính sách giấy phép, không phải nghiên cứu thực nghiệm.
+\end{abstract}
+\noindent\textbf{Từ khóa:} phần mềm nguồn mở; GPLv3; MIT; Apache 2.0; GitHub; giấy phép phần mềm.
+\section{Giới thiệu}
+Phần mềm mã nguồn mở cho phép cộng đồng tìm hiểu, sử dụng và phát triển dựa trên mã nguồn sẵn có. Tuy nhiên, quyền tiếp cận mã nguồn không đồng nghĩa với việc mọi hình thức phân phối đều không có điều kiện. Giấy phép giúp xác lập nghĩa vụ pháp lý khi tái sử dụng một dự án, đặc biệt khi sửa đổi, phân phối bản nhị phân, phối hợp với mã nguồn bên thứ ba hoặc tích hợp vào sản phẩm thương mại. Báo cáo sử dụng ba trường hợp tiêu biểu: GNU Bash (GPLv3 hoặc mới hơn), React (MIT) và Apache Spark (Apache License 2.0). Thông tin pháp lý được đối chiếu với nguyên văn giấy phép và các trang dự án chính thức trong Mục~\ref{sec:sources}.
+\subsection{Mục tiêu và phương pháp}
+Mục tiêu là: (1) nêu phạm vi của từng dự án; (2) nhận diện nghĩa vụ pháp lý quan trọng; (3) so sánh tác động tới cộng đồng và thương mại hóa; (4) đưa ra cơ sở chọn giấy phép cho mã nghiên cứu. Phương pháp là nghiên cứu tài liệu thứ cấp, xem xét trang dự án, nội dung LICENSE và tài liệu hướng dẫn của các tổ chức quản lý. Các nhận định định tính về cộng đồng không phải chỉ số thống kê và có thể thay đổi theo thời điểm.
+\section{Ba dự án nguồn mở tiêu biểu}
+\subsection{GNU Bash -- GNU GPLv3+}
+GNU Bash là trình thông dịch dòng lệnh và ngôn ngữ shell trong hệ sinh thái GNU, phổ biến trong môi trường Unix/Linux, tự động hóa tác vụ và viết shell script. Cộng đồng phát triển gắn với Dự án GNU và nhóm người dùng các hệ điều hành tương thích Unix. Trang GNU Bash nêu giấy phép GNU General Public License phiên bản 3 hoặc mới hơn. GPL cho phép sử dụng, nghiên cứu, sửa đổi và phân phối; khi phân phối chương trình phái sinh thuộc phạm vi GPL, phải tuân thủ nghĩa vụ cấp phép tương ứng, cung cấp thông báo bản quyền và nguồn mã thích hợp. Với một dự án lựa chọn mô hình copyleft, mục đích là duy trì quyền tự do của người nhận trong chuỗi phân phối. GPL không cấm kinh doanh phần mềm, nhưng đặt điều kiện đối với một số cách phân phối phần mềm đóng chứa mã GPL.
+\subsection{React -- MIT}
+React là thư viện JavaScript dùng xây dựng giao diện người dùng theo hướng thành phần, được phát triển công khai trên GitHub cùng cộng đồng các nhà phát triển giao diện. Giấy phép MIT có nội dung ngắn gọn: cho phép sử dụng, sao chép, sửa đổi, kết hợp, xuất bản, phân phối, cấp phép phụ và bán bản sao phần mềm. Nghĩa vụ chính khi phân phối là giữ thông báo bản quyền và nội dung giấy phép trong các bản sao hoặc phần đáng kể của phần mềm. Vì không đặt yêu cầu công khai mã nguồn phái sinh, MIT phù hợp với nhiều bối cảnh tích hợp thư viện vào ứng dụng thương mại và ứng dụng đóng. Điều này không làm mất hiệu lực các giấy phép khác áp dụng cho phần mềm/phụ thuộc bên ngoài.
+\subsection{Apache Spark -- Apache License 2.0}
+Apache Spark là nền tảng tính toán dữ liệu phân tán, hỗ trợ xử lý dữ liệu quy mô lớn và các workload phân tích. Dự án thuộc hệ sinh thái Apache Software Foundation, với hoạt động phát triển qua cộng đồng contributor và hệ thống quản trị mở. Apache License 2.0 là giấy phép permissive cho phép sử dụng, thay đổi và phân phối, kể cả trong hệ thống thương mại. Khác với MIT, Apache 2.0 có điều khoản cấp bằng sáng chế rõ ràng từ người đóng góp (kèm điều kiện chấm dứt cấp phép bằng sáng chế trong một số trường hợp tranh chấp). Khi phân phối, cần kèm giấy phép, giữ thông báo áp dụng, đánh dấu các tệp đã sửa đổi và xử lý tệp NOTICE nếu có. Việc áp dụng Apache 2.0 không đồng nghĩa toàn bộ thư viện phụ thuộc đều sử dụng cùng giấy phép.
+\section{So sánh giấy phép}
+Bảng~\ref{tab:license} khái quát những đặc điểm có ý nghĩa nhất khi đưa phần mềm vào sản phẩm khác. Các nghĩa vụ có thể phụ thuộc ngữ cảnh phân phối, loại liên kết mã và điều khoản cụ thể.
+\begin{table}[htbp]
+\centering\small
+\caption{So sánh tổng quan ba giấy phép}\label{tab:license}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{3cm}XXX}
+\toprule
+Tiêu chí & GPLv3 & MIT & Apache 2.0 \\
+\midrule
+Sử dụng/chỉnh sửa & Có & Có & Có\\
+Phân phối & Có điều kiện & Có điều kiện đơn giản & Có điều kiện\\
+Copyleft khi phân phối tác phẩm phái sinh thuộc phạm vi & Có & Không & Không\\
+Giữ thông báo bản quyền và giấy phép & Có & Có & Có\\
+Điều khoản bằng sáng chế riêng, rõ ràng & Có & Không nêu rõ & Có\\
+Tích hợp mã vào sản phẩm đóng & Bị ràng buộc khi tạo/phân phối tác phẩm thuộc phạm vi GPL & Thường thuận tiện & Thường thuận tiện\\
+Ví dụ & GNU Bash & React & Apache Spark\\
+\bottomrule
+\end{tabularx}
+\end{table}
+\subsection{Quyền sử dụng, sửa đổi và phân phối}
+Cả ba giấy phép cho phép sử dụng và cải tiến mã. Điểm khác biệt chủ yếu là các nghĩa vụ \emph{khi phân phối}. MIT đặt trọng tâm vào việc giữ thông báo bản quyền và giấy phép. Apache 2.0 thêm nghĩa vụ thông báo thay đổi, cơ chế NOTICE thích hợp và cấp bằng sáng chế. GPLv3 sử dụng cơ chế copyleft nhằm bảo đảm người nhận sản phẩm thuộc phạm vi áp dụng tiếp tục nhận được các quyền đối với mã nguồn.
+\subsection{Cộng đồng và mô hình phát triển}
+Giấy phép copyleft tạo cơ sở để các bản phân phối sửa đổi thuộc phạm vi GPL tiếp tục chia sẻ mã và quyền sử dụng, có thể khuyến khích sự đóng góp trở lại nhưng tạo thêm công việc tuân thủ cho các bên tích hợp. MIT giảm rào cản tái sử dụng trong nhiều hệ sinh thái, thuận tiện cho việc phổ biến thư viện nhưng không bắt buộc bên sử dụng công khai các cải tiến. Apache 2.0 hỗ trợ phối hợp giữa doanh nghiệp và cộng đồng nhờ nội dung quyền bằng sáng chế cụ thể và điều khoản thông báo minh bạch. Mức độ phổ biến thực tế của các dự án còn chịu ảnh hưởng của chất lượng phần mềm, tài liệu, quản trị và mạng lưới người dùng; không thể chỉ quy cho giấy phép.
+\subsection{Thương mại hóa và phần mềm đóng}
+Cả GPLv3, MIT và Apache 2.0 đều cho phép hoạt động thương mại. Tuy nhiên, điều đó không đồng nghĩa các quyền và nghĩa vụ khi kết hợp mã giống nhau. MIT và Apache 2.0 thường dễ tích hợp vào sản phẩm mã nguồn đóng vì không bắt buộc công bố mã nguồn riêng chỉ do sử dụng phần mềm được cấp phép theo hai mô hình này. Đối với GPLv3, việc phân phối bản chỉnh sửa hoặc chương trình kết hợp trong phạm vi một tác phẩm chịu GPL có thể kéo theo nghĩa vụ cung cấp mã nguồn tương ứng và giữ giấy phép GPL. Đây là tóm tắt phục vụ học thuật, không thay thế tư vấn pháp lý cho trường hợp cụ thể.
+\section{Lựa chọn giấy phép cho repository nghiên cứu}
+Repository \texttt{collaborative-filtering-movie-recommender} có mục đích trình diễn thuật toán lọc cộng tác, cung cấp dữ liệu tổng hợp và minh chứng thực thi cho học tập. Nhóm lựa chọn MIT vì yêu cầu sử dụng, sao chép, sửa đổi và chia sẻ dễ hiểu, trong khi vẫn cần giữ thông báo bản quyền và toàn văn giấy phép. File \texttt{LICENSE} đặt tại gốc repository; \texttt{README.md} nêu rõ giấy phép; \texttt{CONTRIBUTING.md} cung cấp hướng dẫn đóng góp; \texttt{CITATION.cff} hỗ trợ trích dẫn phần mềm. Dữ liệu hoặc tài nguyên bên thứ ba phải được đánh giá giấy phép riêng; không được coi chúng tự động chuyển sang MIT.
+\section{Tổ chức dự án và minh chứng}
+Các thư mục \texttt{data/}, \texttt{src/}, \texttt{docs/} và \texttt{results/} lần lượt chứa dữ liệu mẫu, mã thuật toán và kiểm thử, mô tả phương pháp/nguồn, kết quả chạy thử. Người học chạy mã Python và unittest từ README. Với các minh chứng giao diện GitHub và Overleaf, cần tự chụp màn hình từ tài khoản thật; không sử dụng hình minh chứng giả. Báo cáo LaTeX có thể biên dịch trên Overleaf bằng trình biên dịch XeLaTeX, nhờ các gói \texttt{fontspec} và \texttt{polyglossia}. Ví dụ trên máy có TeX Live:
+\begin{verbatim}
+latexmk -xelatex -interaction=nonstopmode main.tex
+\end{verbatim}
+\section{Kết luận}
+Các giấy phép nguồn mở đều cho phép sử dụng và phát triển phần mềm nhưng khác nhau ở yêu cầu phân phối và trách nhiệm pháp lý. GPLv3 phù hợp khi mục tiêu là duy trì quyền tự do chia sẻ mã đối với các tác phẩm phái sinh thuộc phạm vi giấy phép; MIT thuận tiện cho thư viện, dự án giáo dục và mã mẫu cần tái sử dụng linh hoạt; Apache 2.0 đặc biệt đáng cân nhắc trong cộng đồng hoặc doanh nghiệp cần quy định rõ việc cấp phép bằng sáng chế. Với repository nghiên cứu lọc cộng tác, MIT được lựa chọn để thuận tiện phổ biến và đóng góp.
+\section*{Tài liệu tham khảo}\label{sec:sources}
+\begin{enumerate}[leftmargin=*]
+\item GNU Project. \emph{Bash}. \url{https://www.gnu.org/software/bash/}.
+\item Free Software Foundation. \emph{GNU General Public License version 3}. \url{https://www.gnu.org/licenses/gpl-3.0.html}.
+\item Meta Open Source. \emph{React repository and license}. \url{https://github.com/facebook/react}.
+\item Open Source Initiative. \emph{The MIT License}. \url{https://opensource.org/license/mit}.
+\item Apache Software Foundation. \emph{Apache Spark}. \url{https://spark.apache.org/}.
+\item Apache Software Foundation. \emph{Apache License, Version 2.0}. \url{https://www.apache.org/licenses/LICENSE-2.0}.
+\item GitHub. \emph{Choose an open source license}. \url{https://choosealicense.com/licenses/}.
+\end{enumerate}
+\end{document}
